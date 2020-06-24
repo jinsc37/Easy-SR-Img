@@ -12,7 +12,7 @@ print(opt)
 
 
 
-os.system('cd methods/RCAN-EDSR-MDSR-DBPN/code')
+os.system('cd methods/RCAN-EDSR-MDSR/code')
 
 if opt.method == 'RCAN':
 
@@ -22,7 +22,7 @@ if opt.method == 'RCAN':
 								   --n_resgroups 10 --n_resblocks 20 --n_feats 64 \
 								   --pre_train ../model/RCAN_BIX{}.pt \
 								   --test_only --save_results --chop --self_ensemble --save 'RCANplus' \
-								   --testpath ../../.. --testset input".format(opt.scale, opt.scale), shell=True, cwd='methods/RCAN-EDSR-MDSR-DBPN/code')
+								   --testpath ../../.. --testset input".format(opt.scale, opt.scale), shell=True, cwd='methods/RCAN-EDSR-MDSR/code')
 
 
 elif opt.method == 'EDSR':
@@ -32,7 +32,7 @@ elif opt.method == 'EDSR':
 								   --scale {} --model EDSR \
 								   --pre_train ../model/EDSR_baseline_x{}.pt \
 								   --test_only --save_results --chop \
-								   --testpath ../../.. --testset input".format(opt.scale,opt.scale), shell=True, cwd='methods/RCAN-EDSR-MDSR-DBPN/code')
+								   --testpath ../../.. --testset input".format(opt.scale,opt.scale), shell=True, cwd='methods/RCAN-EDSR-MDSR/code')
 
 elif opt.method == 'MDSR':
 
@@ -41,7 +41,7 @@ elif opt.method == 'MDSR':
 								   --scale 2+3+4 --model MDSR \
 								   --pre_train ../model/MDSR_baseline.pt \
 								   --test_only --save_results --chop \
-								   --testpath ../../.. --testset input", shell=True, cwd='methods/RCAN-EDSR-MDSR-DBPN/code')
+								   --testpath ../../.. --testset input", shell=True, cwd='methods/RCAN-EDSR-MDSR/code')
 
 else:
 	print("##### No such method name #####")
