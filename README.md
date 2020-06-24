@@ -5,7 +5,7 @@ Supported algorithms are
 - RCAN: ECCV 2018 from [yulunzhang/RCAN](https://github.com/yulunzhang/RCAN)
 - EDSR: CVPRW 2017 from [thstkdgus35/EDSR](https://github.com/thstkdgus35/EDSR-PyTorch)
 - MDSR: CVPRW 2017 also from [thstkdgus35/EDSR](https://github.com/thstkdgus35/EDSR-PyTorch)
-- DBPN
+- DBPN: CVPR 2018 from [alterzero/DBPN](https://github.com/alterzero/DBPN-Pytorch)
 
 ## Motivation
 Isn't it just so tedious to run all the SISR algorithms for your research?
@@ -35,6 +35,7 @@ The code (environment-name) was originally tested with:
 - RCAN (Easy-SR-RCAN): `python>=3.6`, `torch>=0.4.0`, `CUDA>=8.0`, `cuDNN>=5.1`
 - EDSR (Easy-SR-RCAN): `python>=3.6`, `torch>=0.4.0`, `scipy==1.1.0`, `CUDA>=8.0`, `cuDNN>=5.1`
 - MDSR (Easy-SR-RCAN): `python>=3.6`, `torch>=0.4.0`, `scipy==1.1.0`, `CUDA>=8.0`, `cuDNN>=5.1`
+- DBPN (Easy-SR-DBPN): `python>=3.5`, `torch>=1.0.0`, `opencv-contrib-python==4.2.0.34`
 
 ## Execution
 The following are the command-line executions:

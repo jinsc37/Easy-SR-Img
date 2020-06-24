@@ -5,7 +5,6 @@ import subprocess
 parser = argparse.ArgumentParser()
 parser.add_argument('--method', default='RCAN')
 parser.add_argument('--scale', default=2)
-parser.add_argument('--in_path', default='./baby.png')
 
 opt = parser.parse_args()
 print(opt)
@@ -43,6 +42,16 @@ elif opt.method == 'MDSR':
 								   --test_only --save_results --chop \
 								   --testpath ../../.. --testset input", shell=True, cwd='methods/RCAN-EDSR-MDSR/code')
 
+elif opt.method == 'DBPN':
+	os.system('cd methods/DBPN')
+
+	print("##### DBPN allowed scales: 2,4,8 #####")
+	subprocess.run("python eval.py --input_dir '../../'\
+								   --upscale_factor {}\
+								   --model 'models/DBPN_x{}.pth'\
+								   --test_dataset 'input/' --output '../../output'".format(opt.scale,opt.scale), shell=True, cwd='methods/DBPN')
+
+
 else:
 	print("##### No such method name #####")
-	print("##### Please select from RCAN | EDSR | MDSR #####")
+	print("##### Please select from RCAN | EDSR | MDSR | DBPN #####")
