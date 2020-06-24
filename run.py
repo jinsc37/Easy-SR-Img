@@ -23,7 +23,6 @@ if opt.method == 'RCAN':
 								   --test_only --save_results --chop --self_ensemble --save 'RCANplus' \
 								   --testpath ../../.. --testset input".format(opt.scale, opt.scale), shell=True, cwd='methods/RCAN-EDSR-MDSR/code')
 
-
 elif opt.method == 'EDSR':
 
 	print("##### EDSR allowed scales: 2,3,4,8 #####")

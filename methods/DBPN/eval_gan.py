@@ -96,15 +96,13 @@ def eval():
         t1 = time.time()
         print("===> Processing: %s || Timer: %.4f sec." % (name[0], (t1 - t0)))
         prediction = utils.denorm(prediction.data[0].cpu(),vgg=True)
-        save_img(prediction, name[0])
+        save_img(prediction, name[0][:-4] + "_DBPNgan_x{}".format(opt.upscale_factor) + name[0][-4:])
 
 def save_img(img, img_name):
     save_img = img.squeeze().clamp(0, 1).numpy().transpose(1,2,0)
-
     # save img
-    save_dir=os.path.join(opt.output,opt.test_dataset)
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
+    #pdb.set_trace()
+    save_dir=opt.output
         
     save_fn = save_dir +'/'+ img_name
     cv2.imwrite(save_fn, cv2.cvtColor(save_img*255, cv2.COLOR_BGR2RGB),  [cv2.IMWRITE_PNG_COMPRESSION, 0])
