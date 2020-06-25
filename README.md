@@ -19,11 +19,14 @@ For several state-of-the-art SR algorithms, `Easy-SR-Img` automatically creates 
 ## Setup
 We provide a shell script installing the appropriate packages and environments for running the SR algorithms via `conda` (which can be obtained by installing [Anaconda](https://www.anaconda.com/)).
 
-For each supported algorithm, we provide different environments which only need to be run once via:
+For each supported algorithm, we provide different environment setups which only need to be run once.
 
-```bash
-sh set_env.sh
-```
+Please take the following steps: 
+1. `cd Easy-SR-Img`
+2. `bash setup.sh`
+3. `conda activate Easy-SR-1`
+4. Install PyTorch, e.g., `conda install pytorch=0.4.0 cuda90 -c pytorch`
+5. Install torchvision e.g., `conda install -c pytorch torchvision`
 
 After that, just run the commands for an algorithm.
 The run code will automatically set the appropriate environment for each algorithm execution.
