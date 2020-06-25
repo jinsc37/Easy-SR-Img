@@ -29,9 +29,10 @@ Please take the following steps:
 5. Install torchvision e.g., `conda install -c pytorch torchvision`
 
 After that, just run the commands for an algorithm.
-The run code will automatically set the appropriate environment for each algorithm execution.
+The run code will automatically notify the appropriate environment for each algorithm execution, e.g.,
 
-The shell script will also automatically save required pretrained model weights.
+`ERROR: Please run conda activate SISR-1`
+
 
 ### Environment details
 The algorithm (environment-name) was originally tested with: 
