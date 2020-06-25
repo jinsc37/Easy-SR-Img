@@ -3,13 +3,13 @@
 
 ## Setup environments
 
-### Easy-SR-1 ###
-echo Creating Easy-SR-1 environment...
+### SISR-1 ###
+echo Creating SISR-1 environment...
 
-conda create --name Easy-SR-1 python=3.6 numpy
+conda create --name SISR-1 python=3.6 numpy
 
 source ~/anaconda3/etc/profile.d/conda.sh
-conda activate Easy-SR-1
+conda activate SISR-1
 
 conda install matplotlib
 conda install imageio

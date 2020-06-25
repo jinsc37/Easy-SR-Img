@@ -24,7 +24,7 @@ For each supported algorithm, we provide different environment setups which only
 Please take the following steps: 
 1. `cd Easy-SR-Img`
 2. `bash setup.sh`
-3. `conda activate Easy-SR-1`
+3. `conda activate SISR-1`
 4. Install PyTorch, e.g., `conda install pytorch=0.4.0 cuda90 -c pytorch`
 5. Install torchvision e.g., `conda install -c pytorch torchvision`
 
@@ -35,10 +35,10 @@ The shell script will also automatically save required pretrained model weights.
 
 ### Environment details
 The algorithm (environment-name) was originally tested with: 
-- RCAN (Easy-SR-1): `python>=3.6`, `torch>=0.4.0`, `CUDA>=8.0`, `cuDNN>=5.1`
-- EDSR (Easy-SR-1): `python>=3.6`, `torch>=0.4.0`, `scipy==1.1.0`, `CUDA>=8.0`, `cuDNN>=5.1`
-- MDSR (Easy-SR-1): `python>=3.6`, `torch>=0.4.0`, `scipy==1.1.0`, `CUDA>=8.0`, `cuDNN>=5.1`
-- DBPN (Easy-SR-1): `python>=3.5`, `torch>=1.0.0`, `opencv-contrib-python==4.2.0.34`
+- RCAN (SISR-1): `python>=3.6`, `torch>=0.4.0`, `CUDA>=8.0`, `cuDNN>=5.1`
+- EDSR (SISR-1): `python>=3.6`, `torch>=0.4.0`, `scipy==1.1.0`, `CUDA>=8.0`, `cuDNN>=5.1`
+- MDSR (SISR-1): `python>=3.6`, `torch>=0.4.0`, `scipy==1.1.0`, `CUDA>=8.0`, `cuDNN>=5.1`
+- DBPN (SISR-1): `python>=3.5`, `torch>=1.0.0`, `opencv-contrib-python==4.2.0.34`
 
 ## Execution
 Place all of the images you want to test in the `input` folder.
