@@ -15,6 +15,7 @@ conda install matplotlib
 conda install imageio
 conda install -c anaconda scikit-image
 conda install scipy=1.1.0
+conda install -c conda-forge tqdm
 pip install opencv-contrib-python
 
 echo Now please install pytorch=0.4.0 and torchvision
