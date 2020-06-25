@@ -43,7 +43,7 @@ The algorithm (environment-name) was originally tested with:
 
 ## Execution
 Place all of the images you want to test in the `input` folder.
-the results will appear in the `output` folder named as `<image-name>_<method-name>_x<scale>`, e.g., `image_EDSR_x4.png`.
+The results will appear in the `output` folder named as `<image-name>_<method-name>_x<scale>`, e.g., `baby_EDSR_x4.png`.
 
 The following are the command-line executions:
 
